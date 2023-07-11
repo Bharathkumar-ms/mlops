@@ -107,6 +107,11 @@ knn = KNeighborsClassifier(n_neighbors = 21)
 
 KNN = knn.fit(X_train, Y_train)  # Train the kNN model
 
+print(type(X_train))
+
+
+X_train = np.array(X_train)
+
 # Evaluate the model with train data
 pred_train = knn.predict(X_train)  # Predict on train data
 
