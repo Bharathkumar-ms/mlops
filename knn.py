@@ -122,6 +122,10 @@ pd.crosstab(Y_train, pred_train, rownames = ['Actual'], colnames = ['Predictions
 
 print(skmet.accuracy_score(Y_train, pred_train))  # Accuracy measure
 
+print(type(X_test))
+
+X_test = np.array(X_test)
+
 # Predict the class on test data
 pred = knn.predict(X_test)
 pred
